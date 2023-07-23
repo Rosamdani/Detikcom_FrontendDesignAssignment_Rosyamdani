@@ -1,0 +1,46 @@
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+  pointer-events: none;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+.logos {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Atur lebar sesuai kebutuhan, misalnya 100% untuk mengisi layar penuh */
+}
+
+.logos-slide {
+  display: flex;
+  animation: 15s slide infinite linear; /* Animasi selama 15 detik dengan efek slide linear dan berulang tanpa henti */
+  width: 2000px; /* Atur lebar sesuai dengan jumlah elemen slide yang ingin ditampilkan, dalam contoh ini 8 elemen x 250px = 2000px */
+}
+
+/* Atur gaya elemen slide */
+.logos-slide > div {
+  width: 250px; /* Atur lebar elemen slide sesuai kebutuhan */
+  height: 100%; /* Sesuaikan tinggi elemen slide jika diperlukan */
+  /* Tambahkan gaya lain sesuai kebutuhan */
+}
