@@ -44,3 +44,11 @@
   height: 100%; /* Sesuaikan tinggi elemen slide jika diperlukan */
   /* Tambahkan gaya lain sesuai kebutuhan */
 }
+
+.updateCard:hover .imageCard{
+  transform: perspective(20px) rotate 20deg translateX(10px);
+}
+
+.updateCard:hover .textCard{
+  color: #3eb7dd;
+}

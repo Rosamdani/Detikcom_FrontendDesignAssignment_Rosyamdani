@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/85550cfb5f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
@@ -118,7 +117,11 @@
             <p class="text-white text-center md:text-left text-lg md:text-4xl font-bold tracking-[.1em]">Mekanisme</p>
             <div class="w-full space-y-6">
                 <div class="w-full flex hover:shadow-md hover:shadow-white px-[40px] py-[30px] bg-white rounded">
-                    <div class="icon hidden md:block w-[150px]">p</div>
+                    <div class="icon hidden md:block w-[150px]">
+                        <div class="w-full">
+                            <div class="rounded-full flex items-center justify-center w-[70px] bg-gradient-to-br h-[70px] from:bg-[#3c9dbe] to:bg[#018ad3]"></div>
+                        </div>
+                    </div>
                     <div class="konten w-full">
                         <div class="flex justify-between text-sm lg:text-lg text-[#018ad3] mb-4">
                             <p class="font-bold">Registrasi</p>
@@ -134,7 +137,11 @@
                     </div>
                 </div>
                 <div class="w-full flex hover:shadow-md hover:shadow-white px-[40px] py-[30px] bg-white rounded">
-                    <div class="icon hidden md:block w-[150px]">p</div>
+                    <div class="icon hidden md:block w-[150px]">
+                        <div class="w-full">
+                            <div class="rounded-full flex items-center justify-center w-[70px] bg-gradient-to-br h-[70px] from:bg-[#3c9dbe] to:bg[#018ad3]"></div>
+                        </div>
+                    </div>
                     <div class="konten w-full">
                         <div class="flex justify-between text-sm lg:text-lg text-[#018ad3] mb-4">
                             <p class="font-bold">Seleksi Peserta</p>
@@ -151,7 +158,11 @@
                     </div>
                 </div>
                 <div class="w-full flex hover:shadow-md hover:shadow-white px-[40px] py-[30px] bg-white rounded">
-                    <div class="icon hidden md:block w-[150px]">p</div>
+                    <div class="icon hidden md:block w-[150px]">
+                        <div class="w-full">
+                            <div class="rounded-full flex items-center justify-center w-[70px] bg-gradient-to-br h-[70px] from:bg-[#3c9dbe] to:bg[#018ad3]"></div>
+                        </div>
+                    </div>
                     <div class="konten w-full">
                         <div class="flex justify-between text-sm lg:text-lg text-[#018ad3] mb-4">
                             <p class="font-bold">Pengumuman Peserta Terpilih</p>
@@ -234,19 +245,97 @@
         </div>
     </section>
 
-    <section class="w-full h-[500px] font-[poppins] bg-sky-50" id="latest">
-        <div class="w-[70%] mx-10 md:mx-auto">
-            <p class="text-[#007cbd] text-3xl uppercase font-bold">Latest Update</p>
+    <section class="w-full py-20 font-[poppins] bg-sky-50" id="latest">
+        <div class="w-[70%] mx-auto">
+            <p class="text-[#007cbd] text-3xl uppercase font-bold my-5 text-center md:text-left">Latest Update</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="updateCard rounded-lg">
-                    <img class=" updateCard-hover:perspective-[500px]  rounded-lg bg-cover w-full"
-                        src="https://picsum.photos/300/170" alt="" />
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
                     <div class=" py-5">
                         <a href="#">
                             <h5
-                                class="mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
                                 Alpha JWC Ventures
                                 Suntikkan Dana Segar Kepada Online Pajak dan Stoqo</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
+                    </div>
+                </div>
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
+                    <div class=" py-5">
+                        <a href="#">
+                            <h5
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                Startup Lifepack Rampungkan Pendanaan Seri a yang dipimpin golden gate ventures</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
+                    </div>
+                </div>
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
+                    <div class=" py-5">
+                        <a href="#">
+                            <h5
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                angel investor adalah? berikut jenis, contoh dan cara mendapatkannya</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
+                    </div>
+                </div>
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
+                    <div class=" py-5">
+                        <a href="#">
+                            <h5
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                crowe indonesia gelar diskusi terkait valuasi startup & laporan ESG</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
+                    </div>
+                </div>
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
+                    <div class=" py-5">
+                        <a href="#">
+                            <h5
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                startup fresh factory bangun ratusan gudang dingin di 103 kota</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
+                    </div>
+                </div>
+                <div class="updateCard rounded-lg group overflow-hidden">
+                    <div
+                        class="w-full group-hover:transform rounded-lg group-hover:scale-110 overflow-hidden transition-transform duration-300">
+                        <img class="bg-cover w-full"
+                            src="https://picsum.photos/300/170" alt="" />
+                    </div>
+                    <div class=" py-5">
+                        <a href="#">
+                            <h5
+                                class="capitalize textCard mb-2 updateCard-hover:text-blue-600 text-base font-bold tracking-tight text-gray-900">
+                                startup pertanian RI dapat pendanaan awal, totalnya rp 90 m</h5>
                         </a>
                         <p class="mb-3 font-normal text-gray-400">1 hari yang lalu</p>
                     </div>
@@ -262,7 +351,9 @@
             <p class="text-xs line tracking-[.234em]">COMPETITION 2023</p>
         </a>
         <div class="w-full border-b border-white pb-4 md:flex md:items-end space-y-4 md:space-y-0 justify-between">
-            <p class="md:max-w-[60%] text-sm">Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            <p class="md:max-w-[60%] text-sm">Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+                menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau
+                angel investor</p>
             <div class="sosmed space-x-4">
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
