@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/85550cfb5f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-[poppins]">
+
+    <nav class="fixed z-10 w-full font-[poppins] border-gray-200 bg-[#007cbd] text-white">
+        <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex flex-col -space-y-2">
+                <p class="text-xs">detikfinance</p>
+                <p class="font-bold uppercase text-xl">BUSINESS PLAN</p>
+                <p class="text-xs line tracking-[.234em]">COMPETITION 2023</p>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  bg-[#007cbd]">
+                    <li>
+                        <a href="#about"
+                            class="block py-2 pl-3 pr-4 rounded hover:bg-blue-300 md:hover:bg-transparent md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:text-white">About</a>
+                    </li>
+                    <li>
+                        <a href="#mechanism"
+                            class="block py-2 pl-3 pr-4 rounded hover:bg-blue-300 md:hover:bg-transparent md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:text-white">Mechanism</a>
+                    </li>
+                    <li>
+                        <a href="#latest"
+                            class="block py-2 pl-3 pr-4 rounded hover:bg-blue-300 md:hover:bg-transparent md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:text-white">Latest
+                            Update</a>
+                    </li>
+                    <li class="mt-4 md:mt-0">
+                        <a href="#"
+                            class="py-2 px-5 md:ml-0 ml-3 rounded-full hover:text-white hover:bg-blue-500 bg-white text-[#007cbd] md:mt-0">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero"
+        class="bg-center z-10 py-10 font-[poppins] bg-no-repeat h-[350px] w-full bg-gradient-to-b from-[#018ad3] via-[#3c9dbe] to-[#018ad3] bg-blend-multiply">
+    </section>
+
+    <section class="h-screen w-full relative bg-sky-50">
+        <div class="absolute left-[50%] -translate-x-[50%] w-full md:w-[70%] lg:w-[50%] h-full -top-[150px]">
+            <p class="text-center font-bold text-3xl mb-5 text-white">Register</p>
+            <div class="form w-[80%] pb-10 bg-white mx-auto rounded-lg p-5 text-xs">
+                <form action="" class="space-y-4">
+                    <div class="w-full">
+                        <input type="text" placeholder="Nama perusahaan"
+                            class="w-full px-4 py-1 focus:outline-none bg-gray-200 placeholder:text-sm placeholder:text-gray-400 placeholder:before:contents['*'] before:text-red-600 rounded outline-none border-none">
+                    </div>
+                    <div class="w-full">
+                        <input type="email" placeholder="Email"
+                            class="w-full px-4 py-1 focus:outline-none bg-gray-200 placeholder:text-sm placeholder:text-gray-400 placeholder:before:contents['*'] before:text-red-600 rounded outline-none border-none">
+                    </div>
+                    <div class="w-full space-y-2">
+                        <input type="text" placeholder="Nomor telepon"
+                            class="w-full px-4 py-1 focus:outline-none bg-gray-200 placeholder:text-sm placeholder:text-gray-400 placeholder:before:contents['*'] before:text-red-600 rounded outline-none border-none">
+                        *isi hanya angka
+                    </div>
+                    <div class="w-full">
+                        <textarea name="" class="w-full min-h-[200px] rounded bg-gray-200 border-none outline-none p-5"
+                            placeholder="Tentang perusahaan {Maks 200 karakter}" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="w-full flex items-center space-x-10">
+                        <div class="flex items-center justify-center w-[200px]">
+                            <label for="dropzone-file"
+                                class="flex flex-col items-center justify-center w-full h-[200px] border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 hover:bg-gray-100">
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <svg class="w-8 h-8 mb-4 text-blue-500" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                    </svg>
+                                    <p>Input file logo<span class="text-red-600">*</span></p>
+                                </div>
+                                <input id="dropzone-file" type="file" class="hidden" />
+                            </label>
+                        </div>
+
+                        <ol class="list-decimal">
+                            <li>Format file .png, .jpg, .jpeg</li>
+                            <li>Maksimal ukuran file 200 KB</li>
+                            <li>Hindari penggunaan logo berwarna putih</li>
+                            <li>Minimal lebar 300px</li>
+                        </ol>
+                    </div>
+                    <div class="w-full space-y-2">
+                        <div class="relative flex items-center w-full  rounded overflow-hidden">
+                            <input type="file" id="fileInput" class="absolute inset-0 opacity-0 cursor-pointer"
+                                onchange="updateFileName()">
+                            <label for="fileInput" class="bg-gray-200 w-full py-2 px-3 rounded-l cursor-pointer">
+                                <span id="fileName" class="text-sm text-gray-500">Profile Perusahaan atau Deck
+                                    {optional}</span>
+                            </label>
+                            <label for="fileInput"
+                                class="mr-2 absolute h-full w-[200px] flex items-center justify-center -right-3 bg-blue-500 text-white   rounded cursor-pointer">Upload File</label>
+                        </div>
+                        <p class="text-gray-500">Format file .pdf, maksimal 20 MB</p>
+                    </div>
+                    <div class="w-full space-y-2">
+                        <input type="text" placeholder="Link Website"
+                            class="w-full px-4 py-1 focus:outline-none bg-gray-200 placeholder:text-sm placeholder:text-gray-400 placeholder:before:contents['*'] before:text-red-600 rounded outline-none border-none">
+                            <p class="text-gray-500">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://)</p>
+                    </div>
+                    <div class="w-full flex space-x-2">
+                        <input type="checkbox" class="bg-gray-200 outline-none checked:bg-blue-600 rounded focus:outline-none focus:ring-0">
+                        <p>Dengan menekan tombol Register, saya menyetujui <a href="#" class="text-blue-300">Syarat dan Ketentuan</a> yang berlaku</p>
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <button type="submit" name="submit" class="px-14 py-2 bg-blue-600 text-base text-white rounded">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="font-[poppins] space-y-4 text-white py-5 px-10 bg-[#007cbd] w-full">
+        <a href="index.html" class="flex flex-col -space-y-1">
+            <p class="text-xs">detikfinance</p>
+            <p class="font-bold uppercase text-3xl">BUSINESS PLAN</p>
+            <p class="text-xs line tracking-[.234em]">COMPETITION 2023</p>
+        </a>
+        <div class="w-full border-b border-white pb-4 md:flex md:items-end space-y-4 md:space-y-0 justify-between">
+            <p class="md:max-w-[60%] text-sm">Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+                menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau
+                angel investor</p>
+            <div class="sosmed space-x-4">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <p class="text-xs font-thin mt-5 text-gray-300">&copy; 2023 Detikcom. All Rights Reserved</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script>
+        function updateFileName() {
+            const fileInput = document.getElementById("fileInput");
+            const fileNameElement = document.getElementById("fileName");
+            if (fileInput.files.length > 0) {
+                fileNameElement.textContent = fileInput.files[0].name;
+            } else {
+                fileNameElement.textContent = "Profile Perusahaan atau Deck {optional}";
+            }
+        }
+    </script>
+</body>
+
+</html>
